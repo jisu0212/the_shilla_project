@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shilla</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo.png" alt="더 신라"></a></h1>
+        <nav>
+            <a href="#">HOTELS</a>
+            <a href="#">RESERVATION</a>
+            <a href="#">INTRODUCE</a>
+            <a href="#">MEMBERSHIP</a>
+            <a href="#">THE SHILLA SHOP</a>
+        </nav>
+        <div class="icon">
+            <a href="#"><img src="./images/icon_person.svg" alt="마이페이지"></a>
+            <a href="#"><img src="./images/icon_language.svg" alt="언어선택"></a>
+        </div>
+    </header>
+    <main>
+        <!-- part1 -->
+        <div class="part part1">
+            <h1>THE SHILLA</h1>
+            <form action="#" method="get">
+                <fieldset>
+                    <h2>호텔 또는 도시</h2>
+                    <select name="hotel" id="hotel">
+                        <option value="choice">호텔을 선택해주세요</option>
+                        <img src="./images/icon_right.svg" alt="호텔을 선택해주세요">
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <div class="check_in">
+                        <h2>체크인</h2>
+                        <input type="date">
+                        <img src="./images/icon_right.svg" alt="체크인 날짜를 선택해주세요">
+                    </div>
+                    <div class="check_out">
+                        <h2>체크아웃</h2>
+                        <input type="date">
+                        <img src="./images/icon_right.svg" alt="체크아웃 날짜를 선택해주세요">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <h2>객실</h2>
+                    <span class="result">
+                        <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                        <span>1</span>
+                        <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <div class="adult">
+                        <h2>인원</h2>
+                        <span class="result">
+                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <span>성인 1</span>
+                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                        </span>
+                    </div>
+                    <div class="child">
+                        <p>*어린이: 37개월 ~ 만 12세</p>
+                        <span class="result">
+                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <span>어린이 1</span>
+                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                        </span>
+                    </div>
+                    <div class="child">
+                        <p>*유아: 36개월 이하</p>
+                        <span class="result">
+                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <span>유아 1</span>
+                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                        </span>
+                    </div>
+                </fieldset>
+                <button id="search">검색하기</button>
+            </form>
+        </div>
+        <!-- part2 -->
+        <div class="part part2">
+            <div class="part2_info">
+                <a href="#" class="hotel">
+                    <h2>호텔</h2>
+                    <h2><span>HOTEL</span></h2>
+                    <div class="link">
+                        <p>예약하기</p>
+                    </div>
+                </a>
+                <a href="#" class="resort">
+                    <h2>리조트</h2>
+                    <h2><span>RESORT</span></h2>
+                    <div class="link">
+                        <p>예약하기</p>
+                    </div>
+                </a>
+                <a href="#" class="dining">
+                    <h2>다이닝</h2>
+                    <h2><span>DINING</span></h2>
+                    <div class="link">
+                        <p>예약하기</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- part3 -->
+        <div class="part part3">
+            <div class="offer">
+                <h2>스페셜 오퍼</h2>
+                <a href="#">더 알아보기</a>
+            </div>
+            <div class="swiper part3_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/offer_001.jpg" alt=""></div>
+                            <div class="offer_info">
+                                <h3>제주신라호텔</h3>
+                                <h3><span>Rewards Urban Island</span></h3>
+                                <p>2024.07.01 ~ 2024.09.08</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="img"><img src="./images/offer_001.jpg" alt=""></div>
+                            <div class="offer_info">
+                                <h3>제주신라호텔</h3>
+                                <h3><span>Rewards Urban Island</span></h3>
+                                <p>2024.07.01 ~ 2024.09.08</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <!-- part4 -->
+        <div class="part part4">
+            <div class="part4_txt">
+                <h2>SHILLA S MEMBERSHIP</h2>
+                <p>서울 · 제주신라호텔에서 자유롭게 이용 가능한 통합 유료 멤버십, 신라에스<br>
+                새롭게 선보이는 멤버십으로 객실과 다이닝을 더욱 편리하고 여유롭게 이용해 보세요.</p>
+                <a href="#">더 알아보기</a>
+            </div>
+        </div>
+        <!-- part5 -->
+        <div class="part part5">
+            <div class="rewards">
+                <div class="title">
+                    <div class="top">
+                        <h2>신라리워즈</h2>
+                        <a href="#">더 알아보기</a>
+                    </div>
+                    <p>특전을 제공하는 통합멤버십 서비스</p>
+                </div>
+                <ul class="contents">
+                    <li>
+                        <p>01</p>
+                        <div class="txt">
+                            <h3>회원전용 상품</h3>
+                            <p>회원을 위한 상품과 이벤트</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>02</p>
+                        <div class="txt">
+                            <h3>신라리워즈 특전</h3>
+                            <p>리워즈의 다양한 회원특전 상품</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>03</p>
+                        <div class="txt">
+                            <h3>신라리워즈 포인트</h3>
+                            <p>현금처럼 사용가능한 포인트</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- part6 -->
+        <div class="part part6">
+            <h2>갤러리</h2>
+            <div class="swiper part6_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_001.jpg" alt="">
+                            <span><em>SEOUL</em>서울신라호텔</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_002.jpg" alt="">
+                            <span><em>SEOUL</em>서대문 신라스테이</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_003.jpg" alt="">
+                            <span><em>JEJU</em>제주신라호텔</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_001.jpg" alt="">
+                            <span><em>SEOUL</em>서울신라호텔</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_002.jpg" alt="">
+                            <span><em>SEOUL</em>서대문 신라스테이</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/gallery_003.jpg" alt="">
+                            <span><em>JEJU</em>제주신라호텔</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1><img src="./images/logo.png" alt=""></h1>
+        <ul class="info">
+            <li>
+                <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우:04605)</span>
+                <span>대표이사 이부진</span>
+                <span>사업자등록번호 203-81-43363</span>
+                <span>통신판매신고번호 중구00272호</span>
+            </li>
+            <li>
+                <span>서울신라호텔<em>02-2233-3131</em></span>
+                <span>제주신라호텔<em>064-735-5114</em></span>
+                <span>신라스테이<em>02-2230-0700</em></span>
+                <span>신라리워즈 <em>02-2230-5528</em></span>
+            </li>
+            <li>
+                <a href="#">호텔개발</a>
+                <a href="#">고객문의</a>
+                <a href="#">사이트맵</a>
+                <a href="#">삼성상품권</a>
+            </li>
+            <li>
+                <a href="#">신라리워즈약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이메일무단수집금지</a>
+                <a href="#">윤리경영(부정제보)</a>
+                <a href="#">건축·시설물 안전관리</a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/icon_insta.svg" alt="인스타그램"></a>
+                <a href="#"><img src="./images/icon_facebook.svg" alt="페이스북"></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        var part3_swiper = new Swiper('.part3_swiper', {
+            autoplay:{delay:3000}, //자동재생
+            loop:true, //무한반복
+            slidesPerView:1, //한번에 보이는 슬라이드 개수
+            spaceBetween: 20, //슬라이드 간 간격
+            scrollbar: {
+                el: ".part3_swiper .swiper-scrollbar",
+                hide: true,
+            },
+        });
+        var part6_swiper = new Swiper('.part6_swiper', {
+            autoplay:{delay:3000}, //자동재생
+            loop:true, //무한반복
+            slidesPerView:3, //한번에 보이는 슬라이드 개수
+            spaceBetween: 20, //슬라이드 간 간격
+            scrollbar: {
+                el: ".part6_swiper .swiper-scrollbar",
+                hide: false,
+            },
+        });
+    </script>
+</body>
+</html>
