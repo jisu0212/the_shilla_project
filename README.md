@@ -10,5 +10,6 @@ Photoshop, Figma, HTML, CSS, JAVASCRIPT
 <a target="_blank" href="https://www.figma.com/design/AyHhO7g1V0hktpF3Dg2rwu/%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94?node-id=11-257&t=4cli8GUYiDThDEbU-1">피그마 주소 바로가기</a>
 ### 작업이력
 * 07.19 : 메인페이지 html, css 작업
+* 07.22 : 메인페이지 html, css 작업, 예약 1단계 페이지 html, css 작업
 ### 작업 고충
 1. 
