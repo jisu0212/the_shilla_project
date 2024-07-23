@@ -11,5 +11,6 @@ Photoshop, Figma, HTML, CSS, JAVASCRIPT
 ### 작업이력
 * 07.19 : 메인페이지 html, css 작업
 * 07.22 : 메인페이지 html, css 작업, 예약 1단계 페이지 html, css 작업
+* 07.23 : 예약 1단계 페이지 html, css 작업, 예약 2단계 페이지 html, css 작업
 ### 작업 고충
 1. 
