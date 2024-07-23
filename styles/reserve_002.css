@@ -1,0 +1,156 @@
+header {
+    display: flex; justify-content: space-between; align-items: center;
+    width:100%; height:62px; padding:0 30px;
+    position:fixed; top:0; z-index: 999; background-color: #111;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {width:1400px; display: flex; justify-content: space-between;}
+header nav a {color:#fff; font-size: 0.938rem;}
+header .icon {}
+header .icon a:first-child {margin-right: 15px;}
+header .icon a img {}
+/* 공통 */
+main {}
+/* part1 */
+main .part1 {text-align: center;}
+main .part1 h1 {margin: 80px 0 45px; font-size: 1.875rem; font-weight: 500;}
+main .part1 .step {
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 80px;
+}
+main .part1 .step li {position:relative;}
+main .part1 .step li::after {
+    content: ''; width:60px; height:1px; background-color: #777;
+    display: inline-block; position:absolute; right:-90px; top:30px;
+}
+main .part1 .step li:last-child::after {display: none;}
+main .part1 .step li:nth-child(2) {margin: 0 122px;}
+main .part1 .step li:nth-child(1),
+main .part1 .step li:nth-child(3) {color:#777;}
+main .part1 .step li h2 {font-size: 2.5rem; margin-bottom: 10px; font-weight: 500;}
+main .part1 .step li:first-child h2 {margin-bottom: 0;}
+main .part1 .step li p {font-size: 1.125rem; font-weight: 500;}
+/* part2 */
+main .part2 {background-color: #EAEAEA; padding:84.5px 0; font-size: 1.125rem;}
+main .part2 .info {display:flex; align-items: center; justify-content: center;}
+main .part2 .info .check {
+    display: flex;
+}
+main .part2 .info .check .in {margin-right: 20px;}
+main .part2 .info > div {margin-right: 140px; position:relative;}
+main .part2 .info > div::after {
+    content: ''; display:inline-block; width:1px; height:46px;
+    background-color: #9a9a9a; position:absolute; right:-70px; top:10px;
+}
+main .part2 .info .person {margin-right: 70px;}
+main .part2 .info .person::after {display:none;}
+main .part2 .info > * h2 {}
+main .part2 .info > * p {font-weight: 500; margin-top: 16px;}
+main .part2 .info a {border:0.5px solid #777; padding: 17px 24px;}
+/* part3 */
+main .part3 {width:1400px; margin:0 auto; padding:80px 0 0;}
+main .part3 h2 {margin-bottom: 10px;}
+main .part3 p {}
+main .part3 p img {}
+main .part3 .detail {padding: 80px 0; display:flex; justify-content: space-between;}
+main .part3 .detail .option {width:calc(100% - 711px);}
+main .part3 .detail .option > * h2 {font-size: 1.563rem; font-weight: 500;}
+main .part3 .detail .option .breakfast {}
+main .part3 .detail .option .breakfast .title {margin-bottom: 30px;}
+main .part3 .detail .option .breakfast .title h2 {margin-bottom: 10px;}
+main .part3 .detail .option .breakfast .title p {color:#777;}
+main .part3 .detail .option .breakfast .title p em {font-weight: 600;}
+main .part3 .detail .option .breakfast .option_detail {}
+main .part3 .detail .option .breakfast .option_detail .choice {
+    display: flex; align-items: center;
+}
+main .part3 .detail .option .breakfast .option_detail .adult {margin-bottom: 20px;}
+main .part3 .detail .option .breakfast .option_detail .choice {}
+main .part3 .detail .option .breakfast .option_detail .choice h3 {
+    width:100px; font-size: 1.125rem; font-weight: 500;
+}
+main .part3 .detail .option .breakfast .option_detail .choice p {width:110px; margin: 0 50px; font-size: 1.125rem; color:#777;}
+main .part3 .detail .option .breakfast .option_detail .choice p span {font-weight: 500; color:#000;}
+main .part3 .detail .option .breakfast .option_detail .choice .num {
+    background-color: #f5f5f5; width:192px; display:flex; justify-content: space-between; align-items: center; height:49px; padding: 0 20px;
+}
+main .part3 .detail .option .breakfast .option_detail .choice .num button {
+    background-color: #f5f5f5; border:none;
+}
+main .part3 .detail .option .breakfast .option_detail .choice .num button img {}
+main .part3 .detail .option .breakfast .option_detail .choice .num span {}
+main .part3 .detail .option .bed {margin:80px 0;}
+main .part3 .detail .option .bed h2 {margin-bottom: 30px;}
+main .part3 .detail .option .bed .size {display:flex;}
+main .part3 .detail .option .bed .size .bed_size {
+    border: 1px solid #f5f5f5; line-height:46px; width:202px; text-align: center; background-color: #fff; font-size: 1.125rem; font-family: "noto sans kr"; font-weight: 500;
+}
+main .part3 .detail .option .bed .size .bed_size:first-child {margin-right: 50px;}
+main .part3 .detail .option .request {}
+main .part3 .detail .option .request h2 {margin-bottom: 30px;}
+main .part3 .detail .option .request textarea {
+    width:100%; background-color: #f5f5f5; border:none; padding:20px;
+}
+main .part3 .detail .price {width:600px; border:1px solid #E2E2E2; padding:30px; display:flex; justify-content: space-between;}
+main .part3 .detail .price .price_detail {
+    display:flex; flex-flow:column; justify-content: space-between;
+}
+main .part3 .detail .price .price_detail ul {
+    background-color: #f5f5f5;
+    padding: 36.5px 32px;
+}
+main .part3 .detail .price .price_detail ul li {display:flex; position:relative; justify-content: space-between;}
+main .part3 .detail .price .price_detail ul li::after {
+    content: ''; display: inline-block; height:1px; width:476px;
+    background-color: #d7d7d7; position:absolute; bottom:-20px;
+}
+main .part3 .detail .price .price_detail ul li:last-child::after {display:none;}
+main .part3 .detail .price .price_detail ul li:nth-child(2) {
+    margin:40px 0;
+}
+main .part3 .detail .price .price_detail ul li h3 {font-size: 1.25rem; font-weight: 500;}
+main .part3 .detail .price .price_detail ul li p {font-size: 1.125rem;}
+main .part3 .detail .price .price_detail .explain {}
+main .part3 .detail .price .price_detail .explain span {
+    display:block; line-height: 1.7; color:#383838;
+    font-size: 0.875rem; margin-bottom: 10px;
+}
+main .part3 .detail .price .price_detail .explain span:last-child {
+    margin:0;
+}
+main .part3 .detail .price .price_detail .explain span em {font-weight: 600;}
+main .part3 .detail .price .price_detail .total {display:flex; justify-content: space-between; align-items: center;}
+main .part3 .detail .price .price_detail .total h3 {font-size:1.25rem; font-weight: 500;}
+main .part3 .detail .price .price_detail .total p {font-size:1.25rem;}
+main .part3 .detail .price .price_detail .total p em {
+    font-weight: 500; font-size: 2.5rem;
+}
+main .part3 .detail .price .price_detail a {
+    border: 1px solid #777; text-align: center; line-height: 67px;
+    font-size: 1.25rem; font-weight: 500;
+}
+/* footer */
+footer {background-color: #111; padding:80px 0;}
+footer h1 {width:1400px; margin:0 auto; margin-bottom: 20px;}
+footer h1 img {}
+footer .info {
+    width:1400px; margin:0 auto; color:#fff;
+    border-top:1px solid #323232;
+    display:flex; justify-content: space-between;
+}
+footer .info li {
+    display:flex; flex-flow:column;
+    font-size: 0.875rem;
+}
+footer .info li:nth-child(2) span {
+    width:214px; display: flex; justify-content: space-between;
+}
+footer .info li:last-child {flex-flow: row;}
+footer .info li:last-child a:first-child {margin-right: 20px;}
+footer .info li span {margin-top: 20px;}
+footer .info li span em {margin-left: 20px;}
+footer .info li a {color:#fff; margin-top: 20px;}
+footer .info li a:hover {color:#a5a5a5; text-decoration: underline;}
+footer .info li a img:hover {opacity: 0.7; transition:0.3s;}
