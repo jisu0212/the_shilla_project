@@ -15,11 +15,11 @@ header .icon a img {}
 main {}
 main .part {}
 /* part1 */
-main .part1 {text-align: center; position:relative; top:62px;}
-main .part1 h1 {margin: 80px 0 45px; font-size: 1.875rem; font-weight: 500;}
+main .part1 {text-align: center;}
+main .part1 h1 {margin: 142px 0 45px; font-size: 1.875rem; font-weight: 500;}
 main .part1 .step {
     display: flex; justify-content: center;
-    border:1px solid red; padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 main .part1 .step li {position:relative;}
 main .part1 .step li::after {
@@ -32,8 +32,74 @@ main .part1 .step li:nth-child(2),
 main .part1 .step li:nth-child(3) {color:#777;}
 main .part1 .step li h2 {font-size: 2.5rem; margin-bottom: 10px; font-weight: 500;}
 main .part1 .step li p {font-size: 1.125rem; font-weight: 500;}
+/* part2 */
 main .part2 {}
-main .part3 {width:1400px; margin:0 auto; padding: 80px 0 0;}
+main .part2 form {
+    display:flex;
+    background-color: #eaeaea; width:100%; justify-content: center;
+    padding: 84.5px 0;
+}
+main .part2 form fieldset {margin-right: 78px; position:relative;}
+main .part2 form fieldset::after {
+    content: ''; display:inline-block; width:1px; height:46px; background-color: #9a9a9a; position:absolute; right:-38px; top:16px;
+}
+main .part2 form fieldset .hotel p {font-size: 1.125rem;}
+main .part2 form .person::after {display:none;}
+main .part2 form fieldset .hotel {
+    display:flex; width:272px; justify-content: space-between; height: 46px;
+    border-bottom: 1px solid #9a9a9a; align-items: center;
+    cursor: pointer;
+}
+main .part2 form fieldset .hotel p {color:#000;}
+main .part2 form .check,
+main .part2 form .person {display: flex;}
+main .part2 form fieldset h2,
+main .part2 form .person .child p {
+    color:#000; margin-bottom: 6px; font-size: 0.875rem; font-weight: 300;
+}
+main .part2 form .check .date {
+    width:186px; border-bottom: 1px solid #9a9a9a;
+    display:flex; justify-content: space-between;
+    height:46px; position:relative;
+}
+main .part2 form .check .date img {width:20px; position:absolute; right:10px; top:15px;}
+main .part2 form .check .date input {
+    width:100%; background-color: rgba(0,0,0,0); border:none; color:#000; font-family: 'noto sans kr'; font-size: 1.125rem; position:relative;
+    padding: 0 10px;
+}
+main .part2 form .check .date input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    z-index: 1; cursor: pointer;
+}
+main .part2 form .check .date input[type="date"]:focus,
+main .part2 form .room .result input:focus {outline:none;}
+main .part2 form .check .check_in .date {margin-right: 20px;}
+main .part2 form fieldset h2 {font-size: 1.125rem;}
+main .part2 form fieldset span {color:#000;}
+main .part2 form .person div:nth-child(2) {margin:0 20px;}
+main .part2 form .room .result {
+    width:111px; border-bottom: 1px solid #9a9a9a;
+    display:inline-block;
+    display:flex; justify-content: space-between; align-items: center;
+}
+main .part2 form .room .result input {width:40px; background-color: rgba(0,0,0,0); border:none; height: 46px; color:#000; text-align: center; font-size: 1.125rem;}
+main .part2 form .room .result img {width:20px; cursor: pointer;}
+main .part2 form #search {
+    border: 0.5px solid #000; text-align: center;
+    width:156px; line-height:60px; font-size: 1.125rem; color:#000;}
+main .part2 form .person {}
+main .part2 form .person div {
+    width:167px; border-bottom: 1px solid #9a9a9a;
+}
+main .part2 form .person .result {
+    display:flex; justify-content: space-between;
+    align-items: center; height: 46px;
+} 
+main .part2 form .person div h2 {}
+main .part2 form .person div > span img {cursor: pointer;}
+main .part2 form .person div > span span {font-size: 1.125rem;}
+/* part3 */
+main .part3 {width:1400px; margin:0 auto;}
 main .part3 .tab {display: flex; margin: 80px 0 40px; border-bottom: 1px solid #E2E2E2; padding: 14px 0;}
 main .part3 .tab h3 {margin-right: 70px; color:#777;}
 main .part3 .tab h3:first-child {font-weight: 700; color:#000;}
@@ -41,8 +107,13 @@ main .part3 .tab h3:last-child {margin-right: 0;}
 main .part3 .list {}
 main .part3 .list .room {
     display:flex; justify-content: space-between;
-    font-size: 1.125rem; margin-bottom: 80px;
+    font-size: 1.125rem; margin-bottom: 160px; position:relative;
 }
+main .part3 .list .room::after {
+    content: ''; display:block; width: 100%; height: 1px;
+    background-color: #E2E2E2; position:absolute; bottom:-80px;
+}
+main .part3 .list .room:last-child::after {display:none;}
 main .part3 .list .room .left {}
 main .part3 .list .room .left img {}
 main .part3 .list .room .right {width: calc(100% - 803px); height:329px; display:flex; flex-flow:column nowrap; justify-content: space-between;}

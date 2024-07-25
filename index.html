@@ -33,58 +33,62 @@
             <form action="#" method="get">
                 <fieldset>
                     <h2>호텔 또는 도시</h2>
-                    <select name="hotel" id="hotel">
-                        <option value="choice">호텔을 선택해주세요</option>
-                        <img src="./images/icon_right.svg" alt="호텔을 선택해주세요">
-                    </select>
+                    <div class="hotel">
+                        <p>호텔을 선택해주세요</p>
+                        <p><img src="./images/icon_right.svg" alt=""></p>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="check">
                     <div class="check_in">
                         <h2>체크인</h2>
-                        <input type="date">
-                        <img src="./images/icon_right.svg" alt="체크인 날짜를 선택해주세요">
+                        <div class="date">
+                            <input type="date">
+                            <img src="./images/icon_right.svg" alt="체크인 날짜를 선택해주세요">
+                        </div>
                     </div>
                     <div class="check_out">
                         <h2>체크아웃</h2>
-                        <input type="date">
-                        <img src="./images/icon_right.svg" alt="체크아웃 날짜를 선택해주세요">
+                        <div class="date">
+                            <input type="date">
+                            <img src="./images/icon_right.svg" alt="체크아웃 날짜를 선택해주세요">
+                        </div>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="room">
                     <h2>객실</h2>
                     <span class="result">
-                        <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
-                        <span>1</span>
-                        <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                        <img src="./images/icon_minus.svg" alt="">
+                        <input type="text" value="1">
+                        <img src="./images/icon_plus.svg" alt="">
                     </span>
                 </fieldset>
-                <fieldset>
+                <fieldset class="person">
                     <div class="adult">
                         <h2>인원</h2>
                         <span class="result">
-                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <img src="./images/icon_minus.svg" alt="">
                             <span>성인 1</span>
-                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                            <img src="./images/icon_plus.svg" alt="">
                         </span>
                     </div>
                     <div class="child">
                         <p>*어린이: 37개월 ~ 만 12세</p>
                         <span class="result">
-                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <img src="./images/icon_minus.svg" alt="">
                             <span>어린이 1</span>
-                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                            <img src="./images/icon_plus.svg" alt="">
                         </span>
                     </div>
                     <div class="child">
                         <p>*유아: 36개월 이하</p>
                         <span class="result">
-                            <a href="#"><img src="./images/icon_minus.svg" alt=""></a>
+                            <img src="./images/icon_minus.svg" alt=""></button>
                             <span>유아 1</span>
-                            <a href="#"><img src="./images/icon_plus.svg" alt=""></a>
+                            <img src="./images/icon_plus.svg" alt="">
                         </span>
                     </div>
                 </fieldset>
-                <button id="search">검색하기</button>
+                <a href="./reserve_001.html" id="search">검색하기</a>
             </form>
         </div>
         <!-- part2 -->

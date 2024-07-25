@@ -21,12 +21,70 @@ main .part1 {
     width:100%; height:100vh; position:relative;
 }
 main .part1 h1 {font-size: 5rem; font-weight: 200; color:#fff; position:absolute; top:40vh; left: 40vw;}
-main .part1 form {display:flex; position:absolute; bottom:0;}
-main .part1 form fieldset {}
-main .part1 form fieldset h2 {}
-main .part1 form fieldset #hotel {}
-main .part1 form fieldset #hotel option {}
-main .part1 form fieldset #hotel img {}
+main .part1 form {
+    display:flex; position:absolute; bottom:0;
+    background-color: rgba(0,0,0,0.5); width:100%; justify-content: center;
+    padding: 39px 0;
+}
+main .part1 form fieldset {margin-right: 78px; position:relative;}
+main .part1 form fieldset::after {
+    content: ''; display:inline-block; width:1px; height:46px; background-color: #9a9a9a; position:absolute; right:-38px; top:16px;
+}
+main .part1 form fieldset .hotel p {font-size: 1.125rem;}
+main .part1 form .person::after {display:none;}
+main .part1 form fieldset .hotel {
+    display:flex; width:272px; justify-content: space-between; height: 46px;
+    border-bottom: 1px solid #9a9a9a; align-items: center;
+    cursor: pointer;
+}
+main .part1 form fieldset .hotel p {color:#fff;}
+main .part1 form .check,
+main .part1 form .person {display: flex;}
+main .part1 form fieldset h2,
+main .part1 form .person .child p {
+    color:#fff; margin-bottom: 6px; font-size: 0.875rem; font-weight: 300;
+}
+main .part1 form .check .date {
+    width:186px; border-bottom: 1px solid #9a9a9a;
+    display:flex; justify-content: space-between;
+    height:46px; position:relative;
+}
+main .part1 form .check .date img {width:20px; position:absolute; right:10px; top:15px;}
+main .part1 form .check .date input {
+    width:100%; background-color: rgba(0,0,0,0); border:none; color:#fff; font-family: 'noto sans kr'; font-size: 1.125rem; position:relative;
+    padding: 0 10px;
+}
+main .part1 form .check .date input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    z-index: 1; cursor: pointer;
+}
+main .part1 form .check .date input[type="date"]:focus,
+main .part1 form .room .result input:focus {outline:none;}
+main .part1 form .check .check_in .date {margin-right: 20px;}
+main .part1 form fieldset h2 {font-size: 1.125rem;}
+main .part1 form fieldset span {color:#fff;}
+main .part1 form .person div:nth-child(2) {margin:0 20px;}
+main .part1 form .room .result {
+    width:111px; border-bottom: 1px solid #9a9a9a;
+    display:inline-block;
+    display:flex; justify-content: space-between; align-items: center;
+}
+main .part1 form .room .result input {width:40px; background-color: rgba(0,0,0,0); border:none; height: 46px; color:#fff; text-align: center; font-size: 1.125rem;}
+main .part1 form .room .result img {width:20px; cursor: pointer;}
+main .part1 form #search {
+    border: 0.5px solid #fff; text-align: center;
+    width:156px; line-height:60px; font-size: 1.125rem; color:#fff;}
+main .part1 form .person {}
+main .part1 form .person div {
+    width:167px;
+}
+main .part1 form .person .result {
+    display:flex; justify-content: space-between;
+    align-items: center; height: 46px; border-bottom: 1px solid #9a9a9a;
+} 
+main .part1 form .person div h2 {}
+main .part1 form .person div > span img {cursor: pointer;}
+main .part1 form .person div > span span {font-size: 1.125rem;}
 /* part2 */
 main .part2 {background-color: #111; padding:80px 0;}
 main .part2 .part2_info {display:flex; justify-content: space-between; width:1400px; margin:0 auto;}
