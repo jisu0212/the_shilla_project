@@ -1,6 +1,6 @@
 # the_shilla_project
 ### 더 신라 (반응형)
-* 작업기간: 2024.00.00 ~2024.00.00
+* 작업기간: 2024.07.19 ~ 제작 중
 * 개인작업 100%
 ### 사용프로그램
 Photoshop, Figma, HTML, CSS, JAVASCRIPT
