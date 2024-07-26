@@ -85,6 +85,7 @@ main .part1 form .person .result {
 main .part1 form .person div h2 {}
 main .part1 form .person div > span img {cursor: pointer;}
 main .part1 form .person div > span span {font-size: 1.125rem;}
+main .part1 form .child p {height:18px;}
 /* part2 */
 main .part2 {background-color: #111; padding:80px 0;}
 main .part2 .part2_info {display:flex; justify-content: space-between; width:1400px; margin:0 auto;}
