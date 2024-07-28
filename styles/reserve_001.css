@@ -88,6 +88,11 @@ main .part2 form .room .result img {width:20px; cursor: pointer;}
 main .part2 form #search {
     border: 0.5px solid #000; text-align: center;
     width:156px; line-height:60px; font-size: 1.125rem; color:#000;}
+main .part2 form #search:hover {
+    background-color: #111;
+    color:#fff;
+    border:none;
+}
 main .part2 form .person {}
 main .part2 form .person div {
     width:167px;
@@ -101,6 +106,52 @@ main .part2 form .child p {height:18px;}
 main .part2 form .person div h2 {}
 main .part2 form .person div > span img {cursor: pointer;}
 main .part2 form .person div > span span {font-size: 1.125rem;}
+main .part2 .pop {
+    position:fixed; left:0; top:0; z-index: 999;
+    width:100%; height:100vh;
+    background: rgba(0,0,0,0.6);
+}
+main .part2 .pop .location {
+    width:1260px; margin:130px auto 0;
+}
+main .part2 .pop .location .top {
+    background-image: url(../images/pop_001.jpg);
+    height:148px; text-align: center;
+    color:#fff; display:flex; flex-flow:column;
+}
+main .part2 .pop .location .top h3 {
+    margin: 50px 0 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+main .part2 .pop .location .top p {font-weight: 500;}
+main .part2 .pop .location .btm {
+    background-color: #fff; padding:15px 100px 40px;
+}
+main .part2 .pop .location .btm h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+main .part2 .pop .location .btm .choice {
+    margin-top: 20px;
+    display:flex; flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+main .part2 .pop .location .btm .choice span {
+    border:1px solid #dfdfdf;
+    width:245px; text-align: center;
+    line-height:43px;
+}
+main .part2 .pop .location .ok {
+    border:1px solid #dfdfdf;
+    width:128px; margin:40px auto 0;
+    text-align: center; cursor: pointer;
+}
+main .part2 .pop .location .ok:hover {
+    background-color: #d8d8d8; transition: 0.3s;
+}
+main .part2 .pop .location .ok a {line-height: 37px; font-weight: 600;}
 /* part3 */
 main .part3 {width:1400px; margin:0 auto;}
 main .part3 .tab {display: flex; margin: 80px 0 40px; border-bottom: 1px solid #E2E2E2; padding: 14px 0;}
@@ -137,6 +188,9 @@ main .part3 .list .room .right .money {display: flex; justify-content: space-bet
 main .part3 .list .room .right .money span {}
 main .part3 .list .room .right .money span em {font-size: 1.875rem; font-weight: 500;}
 main .part3 .list .room .right .money a {width:164px; line-height: 67px; background-color: #111; color:#fff; text-align: center;}
+main .part3 .list .room .right .money a:hover {
+    background-color: #505050;
+}
 /* footer */
 footer {background-color: #111; padding:80px 0;}
 footer h1 {width:1400px; margin:0 auto; margin-bottom: 20px;}

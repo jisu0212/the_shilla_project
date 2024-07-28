@@ -50,6 +50,7 @@ main .part2 .info .person::after {display:none;}
 main .part2 .info > * h2 {}
 main .part2 .info > * p {font-weight: 500; margin-top: 16px;}
 main .part2 .info a {border:0.5px solid #777; padding: 17px 24px;}
+main .part2 .info a:hover {background-color: #111; color:#fff;}
 /* part3 */
 main .part3 {width:1400px; margin:0 auto; padding:80px 0 0;}
 main .part3 h2 {margin-bottom: 10px;}
@@ -87,6 +88,9 @@ main .part3 .detail .option .bed h2 {margin-bottom: 30px;}
 main .part3 .detail .option .bed .size {display:flex;}
 main .part3 .detail .option .bed .size .bed_size {
     border: 1px solid #e2e2e2; line-height:46px; width:202px; text-align: center; background-color: #fff; font-size: 1.125rem; font-family: "noto sans kr"; font-weight: 500;
+}
+main .part3 .detail .option .bed .size .bed_size:hover {
+    background-color: #111; color:#fff;
 }
 main .part3 .detail .option .bed .size .bed_size:first-child {margin-right: 50px;}
 main .part3 .detail .option .request {}
@@ -132,21 +136,27 @@ main .part3 .detail .price .price_detail a {
     border: 1px solid #777; text-align: center; line-height: 67px;
     font-size: 1.25rem; font-weight: 500;
 }
+main .part3 .detail .price .price_detail a:hover {
+    background-color: #111; color:#fff;
+}
 /* part4 */
 main .part4 {width:1400px; margin:0 auto 80px;}
 main .part4 .rule {margin-bottom: 80px;}
 main .part4 .rule .rule_title,
 main .part4 .caution .caution_title {
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex; justify-content: space-between; align-items: center; cursor: pointer;
     background-color: #F5F5F5; height:49px; padding: 0 30px;
 }
 main .part4 .rule .rule_title h2 {font-size: 1.25rem; font-weight: 500;}
 main .part4 .rule .rule_title p,
-main .part4 .caution .caution_title p {cursor: pointer;}
+main .part4 .caution .caution_title p {}
 main .part4 .rule .rule_title p img {}
 main .part4 .rule .rule_info {
     padding: 0 30px; margin-top: 20px;
+    display:none;
 }
+main .part4 .rule .rule_info.onR {display:block;}
+main .part4 .caution .caution_info.onC {display:flex;}
 main .part4 .rule .rule_info p {
     line-height: 1.7;
 }
@@ -159,7 +169,7 @@ main .part4 .caution .caution_title h2 {font-size: 1.25rem; font-weight: 500;}
 main .part4 .caution .caution_title p {}
 main .part4 .caution .caution_title p img {}
 main .part4 .caution .caution_title p img {}
-main .part4 .caution .caution_info {display:flex; justify-content: space-between;}
+main .part4 .caution .caution_info {display:flex; justify-content: space-between; display:none;}
 main .part4 .caution .caution_info dl {}
 main .part4 .caution .caution_info dl:first-child {margin: 0 90px 0 30px;}
 main .part4 .caution .caution_info dl:last-child {margin: 0 30px 0 0;}
