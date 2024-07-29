@@ -70,7 +70,7 @@ main .part1 form .room .result {
     display:inline-block;
     display:flex; justify-content: space-between; align-items: center;
 }
-main .part1 form .room .result input {width:40px; background-color: rgba(0,0,0,0); border:none; height: 46px; color:#fff; text-align: center; font-size: 1.125rem;}
+main .part1 form .room .result span {width:40px; line-height: 46px; color:#fff; text-align: center; font-size: 1.125rem;}
 main .part1 form .room .result img {width:20px; cursor: pointer;}
 main .part1 form #search {
     border: 0.5px solid #fff; text-align: center;

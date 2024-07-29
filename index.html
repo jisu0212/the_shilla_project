@@ -57,34 +57,34 @@
                 <fieldset class="room">
                     <h2>객실</h2>
                     <span class="result">
-                        <img src="./images/icon_minus.svg" alt="" class="minus">
-                        <input type="text" value="1" class="room_num">
-                        <img src="./images/icon_plus.svg" alt="" class="plus" onclick="increase()">
+                        <img src="./images/icon_minus.svg" alt="" class="minusR" onclick="decreaseR()">
+                        <span class="room_num">1</span>
+                        <img src="./images/icon_plus.svg" alt="" class="plusR" onclick="increaseR()">
                     </span>
                 </fieldset>
                 <fieldset class="person">
                     <div class="adult">
                         <h2>인원</h2>
                         <span class="result">
-                            <img src="./images/icon_minus.svg" alt="">
-                            <span>성인 1</span>
-                            <img src="./images/icon_plus.svg" alt="">
+                            <img src="./images/icon_minus.svg" alt="" class="minusA" onclick="decreaseA()">
+                            <span>성인 <span class="adult_num">1</span></span>
+                            <img src="./images/icon_plus.svg" alt="" class="plusA" onclick="increaseA()">
                         </span>
                     </div>
                     <div class="child">
                         <p>*어린이: 37개월 ~ 만 12세</p>
                         <span class="result">
-                            <img src="./images/icon_minus.svg" alt="">
-                            <span>어린이 1</span>
-                            <img src="./images/icon_plus.svg" alt="">
+                            <img src="./images/icon_minus.svg" alt="" class="minusC" onclick="decreaseC()">
+                            <span>어린이 <span class="child_num">0</span></span>
+                            <img src="./images/icon_plus.svg" alt="" class="plusC" onclick="increaseC()">
                         </span>
                     </div>
                     <div class="child">
                         <p>*유아: 36개월 이하</p>
                         <span class="result">
-                            <img src="./images/icon_minus.svg" alt=""></button>
-                            <span>유아 1</span>
-                            <img src="./images/icon_plus.svg" alt="">
+                            <img src="./images/icon_minus.svg" alt="" class="minusB" onclick="decreaseB()"></button>
+                            <span>유아 <span class="baby_num">0</span></span>
+                            <img src="./images/icon_plus.svg" alt="" class="plusB" onclick="increaseB()">
                         </span>
                     </div>
                 </fieldset>
