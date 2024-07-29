@@ -92,6 +92,7 @@ main .part3 .detail .option .bed .size .bed_size {
 main .part3 .detail .option .bed .size .bed_size:hover {
     background-color: #111; color:#fff;
 }
+main .part3 .detail .option .bed .size .bed_size.onB {background-color: #111; color:#fff;}
 main .part3 .detail .option .bed .size .bed_size:first-child {margin-right: 50px;}
 main .part3 .detail .option .request {}
 main .part3 .detail .option .request h2 {margin-bottom: 30px;}

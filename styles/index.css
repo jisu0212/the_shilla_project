@@ -124,11 +124,13 @@ main .part1 .pop .location .btm .choice {
     justify-content: space-between;
     gap: 20px;
 }
-main .part1 .pop .location .btm .choice span {
+main .part1 .pop .location .btm .choice a {
     border:1px solid #dfdfdf;
     width:245px; text-align: center;
     line-height:43px;
 }
+main .part1 .pop .location .btm .choice a:hover {background-color: #111; color:#fff;}
+main .part1 .pop .location .btm .choice a.onH {background-color: #111; color:#fff;}
 main .part1 .pop .location .ok {
     border:1px solid #dfdfdf;
     width:128px; margin:40px auto 0;

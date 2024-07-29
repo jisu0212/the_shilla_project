@@ -14,11 +14,12 @@ window.addEventListener('scroll',function(){
 const minus = document.querySelector('.minus')
 const plus = document.querySelector('.plus')
 const room = document.querySelector('.room_num')
-let i = 1;
-plus.addEventListener('click',()=>{
-    i++
-    room.innerText = i;
-})
+console.log(minus, plus, room)
+var count=1;
+        function increase(){
+            count=count+1;
+            room.innerHTML=count;
+        }
 /* 호텔 선택 팝업 */
 const pop = document.querySelector('.pop')
 const hotel = document.querySelector('.hotel')
@@ -32,3 +33,10 @@ ok.addEventListener('click',()=>{
     pop.style.display = 'none'
     document.body.style.overflow = '';
 })
+/* 팝업 속 호텔 클릭 시 */
+const ht_btn = document.querySelectorAll('.choice a')
+for(let i=0; i<ht_btn.length; i++){
+    ht_btn[i].addEventListener('click',()=>{
+        
+    })
+}
